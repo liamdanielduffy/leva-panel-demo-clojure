@@ -27,16 +27,19 @@
 (defn mount-root []
   (d/render
    [:div
+
     [toggle-leva-on-click {:background-color "orange"
                            :height "100px"
                            :width "100px"
                            :border-color "black"
                            :border-style "solid"
                            :border-width "1px"}]
+
     [toggle-leva-on-click {:background-color "green"
                            :height "100px"
                            :width "100px"
                            :border-radius "30px"}]]
+
    (.getElementById js/document "app")))
 
 (defn ^:export init! []
